@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """Script to return if a number is prime"""
 
 def check_primes(num_to_check):
@@ -6,11 +7,9 @@ def check_primes(num_to_check):
     """
     count = 0
     for i in range(2, num_to_check):
-        if num_to_check%i == 0:
-            count = count+1
-    if count == 0:
-        return 1
-    return 0
+        if num_to_check % i == 0:
+            return 0
+    return 1
 
 if __name__ == "__main__":
     NUM = int(input())
